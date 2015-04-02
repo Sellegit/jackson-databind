@@ -7,6 +7,7 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.TimeZone;
 import java.util.concurrent.ConcurrentHashMap;
+import com.google.j2objc.annotations.*;
 
 import com.fasterxml.jackson.core.*;
 import com.fasterxml.jackson.core.type.ResolvedType;
@@ -327,6 +328,8 @@ public class ObjectReader
      * NOTE: changed from static to non-static in 2.5; unfortunate but
      * necessary change to support overridability
      */
+
+    @Mapping("constructForReading:")
     protected JsonToken _initForReading(JsonParser p) throws IOException
     {
         if (_schema != null) {

@@ -7,6 +7,7 @@ import java.text.DateFormat;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicReference;
+import com.google.j2objc.annotations.*;
 
 import com.fasterxml.jackson.annotation.*;
 import com.fasterxml.jackson.core.*;
@@ -3595,6 +3596,7 @@ public class ObjectMapper
      *   content to map (note: Json "null" value is considered content;
      *   enf-of-stream not)
      */
+    @Mapping("constructForReading:")
     protected JsonToken _initForReading(JsonParser p) throws IOException
     {
         _deserializationConfig.initialize(p); // since 2.5
