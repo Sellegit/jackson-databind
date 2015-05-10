@@ -20,8 +20,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="jackson-core" exported="" />
     <orderEntry type="library" exported="" name="jackson-annotations-2.5.0" level="project" />
-    <orderEntry type="library" exported="" name="jackson-core-2.6.0-SNAPSHOT" level="project" />
     <orderEntry type="library" exported="" name="j2objc_annotations" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="jsr-275-0.9.2" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="junit-4.11" level="project" />
